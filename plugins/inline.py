@@ -76,11 +76,11 @@ async def answer(bot, query):
 
 
 def get_reply_markup(username, query):
-    url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
+    url = 'https://t.me/GrandCinemas'
     buttons = [
         [
             InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('Share bot', url=url),
+            InlineKeyboardButton('Subscribe', url=url),
         ]
     ]
     return InlineKeyboardMarkup(buttons)
